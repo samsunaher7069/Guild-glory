@@ -2612,7 +2612,7 @@ async def create_four_accounts(region: str, clan_id: str, count: int = 4):
                     lang_code=lang, region=region)
                 if not major_payload or not login_payload:
                     _prog(f"❌ bot {i+1}: payload build failed"); continue                
-                nickname_final = f"CKRPRO_{''.join(random.choices(string.ascii_letters + string.digits, k=5))}"
+                nickname_final = f"ARAFAT_{''.join(random.choices(string.ascii_letters + string.digits, k=5))}"
                 mr = await major_register(release_v, access_token, open_id,
                                           nickname_final, game_version, login_url, lang)
                 if not mr:
